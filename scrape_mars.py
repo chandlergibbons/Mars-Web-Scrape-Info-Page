@@ -6,14 +6,16 @@ def scrape ():
     import requests
     import time
 
-    # URL of page to be scraped
+    # URL of page to be scraped and way to get there
     url = 'https://mars.nasa.gov/news/'
     executable_path = {'executable_path': ChromeDriverManager().install()}
     browser = Browser('chrome', **executable_path, headless=False)
     browser.visit(url)  
 
+
     html = browser.html
 
+    #pars out text needed 
     time.sleep(10)
     soup = bs(html, 'html.parser')
     
@@ -25,7 +27,10 @@ def scrape ():
 
     browser.quit()
 
+    # URL of page to be scraped
     url2 = 'https://www.jpl.nasa.gov/images?search=&category=Mars'
+    
+    #click through
     browser = Browser('chrome', **executable_path, headless=False)
     browser.visit(url2)
     sort_by = browser.find_by_id('searchHelpers_sortBy')
@@ -37,6 +42,7 @@ def scrape ():
     links_found = browser.links.find_by_partial_href('images/jpeg')
     links_found.click()
 
+    #pars out code for image 
     html2 = browser.html
 
     time.sleep(10)
@@ -46,7 +52,10 @@ def scrape ():
 
     browser.quit()
 
+    # URL of page to be scraped
     url3 = "https://space-facts.com/mars/"
+    
+    # scrap modify and store table with pandas
     tables = pd.read_html(url3)
     df = tables[0]
     df = df.rename(columns={0: "Description", 1: "Mars"})
@@ -55,8 +64,10 @@ def scrape ():
 
     browser.quit()
 
+    # URL of page to be scraped
     url4 = 'https://astrogeology.usgs.gov/search/results?q=hemisphere+enhanced&k1=target&v1=Mars'
     browser = Browser('chrome', **executable_path, headless=False)
+    # click through and parising 
     browser.visit(url4)
     browser.links.find_by_partial_text('Cerberus Hemisphere').click()
 
@@ -99,7 +110,8 @@ def scrape ():
 
     browser.quit()
 
-   
+    #python nested dict build out 
+
     base_hem = "https://astrogeology.usgs.gov"
 
     hemisphere_image_urls = [

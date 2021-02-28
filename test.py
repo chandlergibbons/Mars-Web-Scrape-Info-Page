@@ -5,6 +5,7 @@ from flask_pymongo import PyMongo
 # create instance of Flask app
 app = Flask(__name__)
 
+#open up a conection to mongo 
 mongo = PyMongo(app, uri="mongodb://localhost:27017/mars_page_content")
 
 @app.route("/")
@@ -21,7 +22,10 @@ def home():
 
 @app.route("/scrape")
 def pull_content():
+
+    #do the scraping 
     mars_content = scrape()
+    #update mongo
     mongo.db.collection.update({},  mars_content, upsert=True)
 
     return redirect("/")
