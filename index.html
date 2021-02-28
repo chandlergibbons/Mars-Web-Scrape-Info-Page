@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Costa Rica Weather</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+</head>
+
+<body>
+  <div class="container-fluid">
+    <div class="jumbotron text-center">
+      <h1>Mission to Mars</h1>
+      <p><a class="btn btn-primary btn-lg" href="/scrape" role="button">Scrape New Data</a></p>
+    </div>
+        <h2>Latest Mars News</h2>
+        <h3>{{ scraped.news_title }}</h3>
+        <p>{{ scraped.news_p}}</p>
+    </div>
+    <div>
+        <div>
+            <h2>Featured Mars Image</h2>
+            <img src="{{ scraped.featured_image_url}}" alt="Sloth">
+        </div>
+        <div>
+            <h3>Mars Facts</h3>
+            <div>
+              {{scraped.mars_facts|safe}}
+            </div> 
+        </div>
+    </div>
+    <div>
+        <h2>Mars Hemispheres</h2>
+        <br>
+        <div class="container">
+            <!-- <div class="row">
+              <div class="col">
+                <img src="{{ scraped.sloth_img }}" alt="Sloth">
+              </div>
+              <div class="col">
+                <img src="{{ scraped.sloth_img }}" alt="Sloth">
+              </div>
+            </div>
+            <div class="row">
+              <div class="col">
+                <img src="{{ scraped.sloth_img }}" alt="Sloth">
+              </div>
+              <div class="col">
+                <img src="{{ scraped.sloth_img }}" alt="Sloth">
+              </div>
+            </div> -->
+
+            {% for hemisphere in scraped.hemisphere_image_urls %}
+            <div class="col-md-6">
+              <h3>{{ hemisphere.title}}</h3>
+              <img src="{{ hemisphere.img_url}}" alt="Sloth">
+            </div>
+            {% endfor %}
+          </div>             
+    </div>
+  </div>
+</body>
+
+</html>

@@ -1,0 +1,16 @@
+<!-- <div class="row">
+              <div class="col">
+                <img src="{{ scraped.sloth_img }}" alt="Sloth">
+              </div>
+              <div class="col">
+                <img src="{{ scraped.sloth_img }}" alt="Sloth">
+              </div>
+            </div>
+            <div class="row">
+              <div class="col">
+                <img src="{{ scraped.sloth_img }}" alt="Sloth">
+              </div>
+              <div class="col">
+                <img src="{{ scraped.sloth_img }}" alt="Sloth">
+              </div>
+            </div> -->
