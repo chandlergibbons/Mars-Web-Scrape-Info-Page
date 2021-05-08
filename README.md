@@ -11,3 +11,13 @@ Technolgies: Jupyter Notebook, BeautifulSoup, Pandas, and Requests/Splinter
 NASA Mars News
 
 First I scraped the NASA Mars News Site and collected the latest News Title and Paragraph Text. I then Assigned the text to variables to be referenced later.
+
+
+JPL Mars Space Images - Featured Image
+
+
+Next I Visited the url for JPL Featured Space Image. I then used splinter to navigate the site and find the image url for the current Featured Mars Image and assign the url string to a variable.
+
+
+
+
