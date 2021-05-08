@@ -25,4 +25,19 @@ Mars Facts
 The next items I grabed were on the Mars Facts webpage. I used Pandas to scrape the table containing facts about the planet including Diameter, Mass, etc. I then used Pandas to convert the data to a HTML table string.
 
 
+Mars Hemispheres
+
+
+Lastly I visited the USGS Astrogeology site here to obtain high resolution images for each of Mar's hemispheres.
+
+
+I used splinter tto click each of the links to the hemispheres in order to find the image url to the full resolution image.
+
+
+I then saved both the image url string for the full resolution hemisphere image, and the Hemisphere title containing the hemisphere name. I used a Python dictionary to store the data.
+
+
+Then I appended the dictionary with the image url string and the hemisphere title to a list. This list contains one dictionary for each hemisphere.
+
+
 
