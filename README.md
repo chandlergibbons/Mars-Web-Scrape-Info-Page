@@ -19,5 +19,10 @@ JPL Mars Space Images - Featured Image
 Next I Visited the url for JPL Featured Space Image. I then used splinter to navigate the site and find the image url for the current Featured Mars Image and assign the url string to a variable.
 
 
+Mars Facts
+
+
+The next items I grabed were on the Mars Facts webpage. I used Pandas to scrape the table containing facts about the planet including Diameter, Mass, etc. I then used Pandas to convert the data to a HTML table string.
+
 
 
