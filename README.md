@@ -61,3 +61,7 @@ Lastly I custom built a template HTML file called index.html that takes the mars
 Here's what the final product looked like!
 
 ![](https://github.com/chandlergibbons/Mars-Web-Scrape-Info-Page/blob/a9ab8837cd839dab82dcb30862613ecc3ca1b91c/finished_page_images/Screen%20Shot%202021-02-27%20at%2010.34.24%20PM.png)
+
+![](https://github.com/chandlergibbons/Mars-Web-Scrape-Info-Page/blob/fd1b3c97559e55e1a7692dd02896d84873d7311a/finished_page_images/Screen%20Shot%202021-02-27%20at%2010.34.48%20PM.png)
+
+![](https://github.com/chandlergibbons/Mars-Web-Scrape-Info-Page/blob/fd1b3c97559e55e1a7692dd02896d84873d7311a/finished_page_images/Screen%20Shot%202021-02-27%20at%2010.34.53%20PM.png)
