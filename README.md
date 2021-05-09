@@ -1,4 +1,4 @@
-# web-scraping-challenge
+# Mars Web Scrape Info Page
 
 ![](Mars-Perseverance-Landing.gif)
 
