@@ -4,9 +4,9 @@
 
 In this project I built a web application that scrapes various websites for data related to the Mission to Mars and displays the information in a single HTML page. The following outlines what I did. 
 
-Step 1 - Scraping
+Technolgies: Jupyter Notebook, BeautifulSoup, Pandas, and Requests/Splinter, MongoDB, Python, Flask, SQLAlchemy 
 
-Technolgies: Jupyter Notebook, BeautifulSoup, Pandas, and Requests/Splinter
+Step 1 - Scraping
 
 NASA Mars News: https://mars.nasa.gov/news/?page=0&per_page=40&order=publish_date+desc%2Ccreated_at+desc&search=&category=19%2C165%2C184%2C204&blank_scope=Latest
 
