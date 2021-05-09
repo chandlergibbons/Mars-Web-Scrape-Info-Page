@@ -4,9 +4,9 @@
 
 In this project I built a web application that scrapes various websites for data related to the Mission to Mars and displays the information in a single HTML page. The following outlines what I did. 
 
-Technolgies: Jupyter Notebook, BeautifulSoup, Pandas, and Requests/Splinter, MongoDB, Python, Flask, SQLAlchemy 
+**Technolgies**: Jupyter Notebook, BeautifulSoup, Pandas, and Requests/Splinter, MongoDB, Python, Flask, SQLAlchemy 
 
-Step 1 - Scraping
+**Step 1 - Scraping**
 
 NASA Mars News: https://mars.nasa.gov/news/?page=0&per_page=40&order=publish_date+desc%2Ccreated_at+desc&search=&category=19%2C165%2C184%2C204&blank_scope=Latest
 
@@ -40,7 +40,7 @@ I then saved both the image url string for the full resolution hemisphere image,
 Then I appended the dictionary with the image url string and the hemisphere title to a list. This list contains one dictionary for each hemisphere.
 
 
-Step 2 - MongoDB and Flask Application
+**Step 2 - MongoDB and Flask Application**
 
 First I utilized MongoDB with Flask templating to create a new HTML page that displays all of the information that was scraped from the URLs above.
 
