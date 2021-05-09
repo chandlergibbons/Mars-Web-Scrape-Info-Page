@@ -60,4 +60,4 @@ Lastly I custom built a template HTML file called index.html that takes the mars
 
 Here's what the final product looked like!
 
-![](Screen Shot 2021-02-27 at 10.34.24 PM.png)
+![](finished_page_images/Screen Shot 2021-02-27 at 10.34.24 PM.png)
